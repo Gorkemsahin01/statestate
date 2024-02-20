@@ -20,9 +20,11 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={handleClick}>Yazılım Dili Ekle</button>
+      <button className="AppButton" onClick={handleClick}>
+        Yazılım Dili Ekle
+      </button>
 
-      <div>{courseList}</div>
+      <div className="courseList">{courseList}</div>
     </div>
   )
 }
