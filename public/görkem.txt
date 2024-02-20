@@ -1,0 +1,13 @@
+  const [value, setValue] = useState(0)
+ // birinci value değerimiz değiştirmek istediğimiz değer ve bunu setvalue ile değiştirebiliriz.
+
+   const handleClick = () => {
+    setValue(value + 1)
+  }
+
+  return (
+    <div className="App">
+      <button onClick={handleClick}>Kurs ekle</button>
+      <div>Kurs sayısı: {value}</div>
+    </div>
+  )
